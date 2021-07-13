@@ -19,7 +19,7 @@ class PNP {
 
   ~PNP() = default;
 
-  PNP_Data getPNPData(const Serial_Data& _serial_data, const Target_Data& _target_data);
+  Locate_Data getLocateData(const Serial_Data& _serial_data, const Target_Data& _target_data);
 
  protected:
   std::map<std::string, std::string> identifier{

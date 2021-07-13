@@ -10,10 +10,6 @@ struct Car_Config {
   Car_Config() = default;
 };
 
-struct Target_Config : Buff_Config, Car_Config {
-  Target_Config() = default;
-};
-
 struct Target_Data {
   Target_Data() = default;
 };

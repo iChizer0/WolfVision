@@ -7,6 +7,7 @@
                 "${workspaceFolder}/base/**",
                 "${workspaceFolder}/device/**",
                 "${workspaceFolder}/device/camera/**",
+                "${workspaceFolder}/device/can_bus/**",
                 "${workspaceFolder}/device/serial/**",
                 "${workspaceFolder}/module/filter/**",
                 "${workspaceFolder}/module/classification/**",

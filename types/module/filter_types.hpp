@@ -6,15 +6,7 @@ struct Kalman_Config {
   Kalman_Config() = default;
 };
 
-struct Filter_Config : Kalman_Config {
-  Filter_Config() = default;
-};
-
-struct Kalman_Data {
-  Kalman_Data() = default;
-};
-
-struct Filter_Data : Kalman_Data {
+struct Filter_Data {
   Filter_Data() = default;
 };
 

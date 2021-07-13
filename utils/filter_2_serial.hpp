@@ -7,9 +7,9 @@ namespace wv::utils {
 
 using namespace wv::types;
 
-Serial_Data Kalman2Serial(const Kalman_Data& _kalman_data) {
-  Kalman_Data kalman_data = _kalman_data;
-  kalman_data             = Kalman_Data();
+Serial_Data Filter2Serial(const Filter_Data& _filter_data) {
+  Filter_Data filter_data = _filter_data;
+  filter_data             = Filter_Data();
 
   return Serial_Data();
 }

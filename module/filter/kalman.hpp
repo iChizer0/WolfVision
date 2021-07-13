@@ -20,7 +20,7 @@ class Kalman {
 
   ~Kalman() = default;
 
-  Kalman_Data getKalmanData(const Serial_Data& _serial_data, const RingBuffer<PNP_Data>& _pnp_data_ring_buffer);
+  Filter_Data getFilterData(const Serial_Data& _serial_data, const RingBuffer<Locate_Data>& _locate_data_rb);
 
  protected:
   std::map<std::string, std::string> identifier{
