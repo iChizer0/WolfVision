@@ -30,7 +30,7 @@ int main() {
     wv::types::Filter_Data filter_data{kalman.getFilterData(serial_data, locate_data_buffer)};
 
     serial_port.sendSerialData(wv::utils::Filter2Serial(filter_data));
-  };
+  }
 
   return 0;
 }
