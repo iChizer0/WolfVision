@@ -17,7 +17,7 @@ class RoI {
 
   ~RoI() = default;
 
-  inline RoI_Data getRoIData();
+  RoI_Data getRoIData();
 
  protected:
   std::map<std::string, std::string> identifier{

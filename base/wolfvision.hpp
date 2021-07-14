@@ -24,7 +24,7 @@ std::string serial_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/device/serial.
 std::string car_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/car.xml")};
 std::string buff_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/buff.xml")};
 std::string roi_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/roi.xml")};
-std::string pnp_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/pnp.xml")};
-std::string kalman_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/kalman.xml")};
+std::string predict_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/predict.xml")};
+std::string compensate_config{fmt::format("{}{}", CONFIG_FILE_PATH, "/module/compensate.xml")};
 
 }  // namespace wolfvision

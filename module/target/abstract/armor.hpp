@@ -1,3 +1,3 @@
 #pragma once
 
-namespace wv::module {}
+namespace wv::module::armor {}

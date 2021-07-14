@@ -5,14 +5,12 @@
 #include <map>
 #include <string>
 
-#include "module/target/abstract/armor.hpp"
-#include "module/target/abstract/color_literal.hpp"
-#include "module/target/abstract/pre_processing.hpp"
+#include "types/basic/ring_buffer_types.hpp"
 #include "types/device/camera_types.hpp"
 #include "types/device/serial_types.hpp"
 #include "types/module/target_types.hpp"
 
-namespace wv::module {
+namespace wv::module::buff {
 
 using namespace wv::types;
 
@@ -22,7 +20,9 @@ class Buff {
 
   ~Buff() = default;
 
-   Target_Data getTargetData(const Serial_Data& _serial_data, const Camera_Data& _camera_data);
+  Target_Data getTargetData(const Serial_Data&             _serial_data,
+                            const RingBuffer<Camera_Data>& _camera_data_buffer,
+                            const RingBuffer<Target_Data>& _target_data_buffer);
 
  protected:
   std::map<std::string, std::string> identifier{
@@ -32,6 +32,8 @@ class Buff {
 
  private:
   Buff_Config buff_config_;
+  Armor_Data  armor_data_;
+  PNP_Data    pnp_data_;
 };
 
-}  // namespace wv::module
+}  // namespace wv::module::buff
